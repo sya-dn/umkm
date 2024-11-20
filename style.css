@@ -1,0 +1,171 @@
+/* CSS untuk Header */
+header {
+    display: flex;
+    flex-direction: column; /* Atur elemen header secara vertikal */
+    align-items: center; /* Pusatkan elemen */
+    background-color: #333;
+    color: #fff;
+    padding: 2px 0; /* Tambahkan padding vertikal */
+    gap: 8px; /* Atur jarak antar elemen di dalam header */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Pusatkan logo dan teks secara vertikal */
+    gap: 15px; /* Beri jarak antara logo dan teks */
+    margin-bottom: 10px; /* Jarak antara logo dan teks lainnya */
+}
+
+.logo {
+    width: 100px; /* Sesuaikan ukuran logo */
+    height: auto;
+}
+
+header h1 {
+    font-size: 24px; /* Ukuran tulisan "Welcome to Mr. Yess Cafe" */
+    margin-bottom: 5px; /* Jarak antara h1 ke elemen bawah */
+}
+
+.sub-header {
+    margin-top: -10px; /* Dekatkan ke logo-container */
+    line-height: 1.5; /* Atur spasi baris */
+}
+
+header h6 {
+    font-size: 14px; /* Ukuran lebih kecil */
+    color: #fff;
+    text-align: center; /* Pusatkan teks */
+    line-height: 1.5; /* Spasi antar baris seperti di Word */
+    margin-top: -10px; /* Sesuaikan untuk mendekatkan ke elemen atas */
+    margin-bottom: 0; /* Atur jarak ke elemen bawah */
+}
+
+
+
+/* CSS untuk Navigasi */
+nav {
+    margin-top: 10px; /* Jarak antara teks dan menu */
+    text-align: center;
+    background-color: #333;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* CSS untuk Home Section */
+.home-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.cafe-image {
+    width: 100%;
+    max-width: 800px; /* Sesuaikan ukuran gambar */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* CSS untuk Menu */
+.menu {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.menu-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar gambar */
+    margin-bottom: 20px; /* Jarak dari bagian menu lainnya */
+}
+
+.menu-item {
+    text-align: center; /* Agar teks di bawah gambar sejajar */
+}
+
+.menu-item img {
+    width: 500px; /* Atur ukuran gambar */
+    height: auto; /* Proporsional sesuai dimensi asli */
+    border-radius: 10px; /* Sudut gambar melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.menu-item p {
+    margin-top: 10px; /* Jarak antara gambar dan teks */
+    font-weight: bold; /* Menebalkan teks */
+    font-size: 16px; /* Ukuran teks */
+}
+
+
+/* CSS untuk Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative; /* Pastikan footer tetap di bawah */
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS Responsif untuk Layar Kecil */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 18px; /* Ukuran lebih kecil untuk layar HP */
+    }
+
+    .logo {
+        width: 80px; /* Ukuran logo lebih kecil */
+    }
+
+    header h6 {
+        font-size: 12px; /* Sesuaikan ukuran sub-header */
+        margin-top: -5px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertikal untuk layar kecil */
+        gap: 10px; /* Jarak antar menu */
+    }
+
+    .menu-images {
+        flex-direction: column; /* Atur gambar menu agar vertikal */
+        gap: 15px; /* Jarak antar gambar */
+    }
+
+    .menu-item img {
+        width: 90%; /* Sesuaikan gambar dengan lebar layar */
+    }
+
+    .cafe-image {
+        max-width: 100%; /* Gambar utama menyesuaikan layar */
+    }
+
+    .menu {
+        padding: 10px; /* Kurangi padding untuk layar kecil */
+    }
+}
